@@ -2,13 +2,13 @@ FROM dockerfile/java:oracle-java8
 MAINTAINER mihai.parv
 
 ENV SERVIIO_WEBUI_VERSION 1.0.1-c
-ENV SERVIIO_VERSION 1.4.1.1-linux
+ENV SERVIIO_VERSION 1.4.1.1
 
 RUN \
   cd /opt && \
-  wget http://download.serviio.org/releases/serviio-$SERVIIO_VERSION.tar.gz && \
-  tar xvzf serviio-$SERVIIO_VERSION.tar.gz && \
-  rm -f serviio-$SERVIIO_VERSION.tar.gz && \
+  wget http://download.serviio.org/releases/serviio-$SERVIIO_VERSION-linux.tar.gz && \
+  tar xvzf serviio-$SERVIIO_VERSION-linux.tar.gz && \
+  rm -f serviio-$SERVIIO_VERSION-linux.tar.gz && \
   mv serviio-$SERVIIO_VERSION serviio
 
 RUN \

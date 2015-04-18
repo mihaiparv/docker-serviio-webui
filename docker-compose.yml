@@ -1,4 +1,4 @@
-serviio:
+serviio-web-ui:
   build: .
   net: host
   volumes:

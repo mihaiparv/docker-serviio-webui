@@ -11,7 +11,7 @@ RUN \
   wget http://download.serviio.org/releases/serviio-$SERVIIO_VERSION.tar.gz && \
   tar xvzf serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz && \
   tar xvzf serviio-$SERVIIO_VERSION.tar.gz && \
-  rm -f serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz
+  rm -f serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz && \
   rm -f serviio-$SERVIIO_VERSION.tar.gz
 
 WORKDIR /opt/serviio

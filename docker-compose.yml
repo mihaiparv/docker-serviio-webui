@@ -1,0 +1,5 @@
+serviio:
+  build: .
+  net: host
+  volumes:
+    - logs:/opt/serviio/log

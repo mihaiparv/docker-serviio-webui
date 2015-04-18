@@ -15,7 +15,7 @@ RUN \
   cd /opt/serviio && \
   wget http://kairoh.bitbucket.org/serviio-webui/dist/serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz && \
   tar xvzf serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz && \
-  rm -f serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz && \
+  rm -f serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz
 
 WORKDIR /opt/serviio
 

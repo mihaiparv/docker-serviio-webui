@@ -17,6 +17,8 @@ RUN \
   tar xvzf serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz && \
   rm -f serviio-webui-unix-$SERVIIO_WEBUI_VERSION.tar.gz
 
+COPY serviio-webui.sh /opt/serviio/bin/
+
 WORKDIR /opt/serviio
 
 VOLUME /opt/serviio/log
@@ -24,4 +26,4 @@ VOLUME /opt/serviio/log
 # serviio-webui requires TCP port 8123
 EXPOSE 8123:8123/tcp
 
-CMD [ "/opt/serviio/bin/serviio-webui.sh", "-Dserviio.remoteHost=$SERVIIO_TCP_ADDR" ]
+CMD [ "/opt/serviio/bin/serviio-webui.sh"]

@@ -54,6 +54,6 @@ if $cygwin; then
 fi
 
 # Execute the JVM in the foreground
-JAVA_OPTS="-Dserviio.home=$SERVIIO_HOME -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dserviio.remoteHost=$SERVIIO_PORT_23423_TCP_ADDR"
+JAVA_OPTS="-Dserviio.home=$SERVIIO_HOME -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dserviio.remoteHost=serviio"
 JVM_OPTS="-Xms5M -XX:+UseParNewGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10"
 "$JAVA" $JVM_OPTS $JAVA_OPTS -classpath "$WEBUI_CLASSPATH" org.serviio.restui.RestletProxy "$@"

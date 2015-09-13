@@ -1,4 +1,4 @@
-FROM dockerfile/java:oracle-java8
+FROM java:8-jre
 MAINTAINER mihai.parv
 
 ENV SERVIIO_WEBUI_VERSION 1.0.1-c
